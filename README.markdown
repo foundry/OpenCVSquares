@@ -5,7 +5,6 @@ added fast vs accurate comparisons
 fast omits canny and only scans 1 colour plane
 accurate includes canny and scans all colours
 
-
 2/1/2013
 openCV library compiled from latest gitHub clone 
 
