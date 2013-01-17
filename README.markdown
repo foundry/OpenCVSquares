@@ -1,5 +1,8 @@
 __OpenCV computer vision with iOS__  
 
+16/1/2012 
+Repo had become a mess. Trashed it with a fresh commit.
+
 9/1/2013
 added fast vs accurate comparisons
 fast omits canny and only scans 1 colour plane
@@ -9,6 +12,7 @@ accurate includes canny and scans all colours
 openCV library compiled from latest gitHub clone 
 
 Requirements: OSX10.7+ XCode4.4+ iOS5.0+
+For XCode4.2/Snow Leopard see [OpenCVSquaresSL](https://github.com/foundry/OpenCVSquaresSL)
 
 
 __integrating openCV and C++ with objective-C__
