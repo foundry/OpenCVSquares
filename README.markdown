@@ -11,7 +11,7 @@ accurate includes canny and scans all colours
 2/1/2013
 openCV library compiled from latest gitHub clone 
 
-Requirements: OSX10.7+ XCode4.4+ iOS5.0+
+Requirements: OSX10.7+ XCode4.4+ iOS5.0+  
 For XCode4.2/Snow Leopard see [OpenCVSquaresSL](https://github.com/foundry/OpenCVSquaresSL)
 
 
