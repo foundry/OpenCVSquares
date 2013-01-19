@@ -62,8 +62,17 @@
 -(cv::Mat)CVGrayscaleMat
 {
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-    CGFloat cols = self.size.width;
-    CGFloat rows = self.size.height;
+    
+    CGFloat cols;
+    CGFloat rows;
+    if  (self.imageOrientation == UIImageOrientationLeft
+         || self.imageOrientation == UIImageOrientationRight) {
+        cols = self.size.height;
+        rows = self.size.width;
+    } else {
+        cols = self.size.width;
+        rows = self.size.height;
+    }
     
     cv::Mat cvMat(rows, cols, CV_8UC1); // 8 bits per component, 1 channels
     
@@ -73,7 +82,7 @@
                                                     8,                          // Bits per component
                                                     cvMat.step[0],              // Bytes per row
                                                     colorSpace,                 // Colorspace
-                                                    kCGImageAlphaNoneSkipLast |
+                                                    kCGImageAlphaNone |
                                                     kCGBitmapByteOrderDefault); // Bitmap info flags
     
     CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), self.CGImage);
