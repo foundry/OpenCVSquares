@@ -99,7 +99,7 @@
 
 + (UIImage *)imageWithCVMat:(const cv::Mat&)cvMat
 {
-    return [[UIImage alloc] initWithCVMat:cvMat orientation:0];
+    return [[UIImage alloc] initWithCVMat:cvMat orientation:UIImageOrientationUp];
 }
 
 
