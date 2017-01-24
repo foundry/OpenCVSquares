@@ -1,6 +1,6 @@
 __OpenCV computer vision with iOS__  
 
-24 Jan 2017
+24 Jan 2017  
 Updated for XCode 8.2
 
 16 Jan 2013   
