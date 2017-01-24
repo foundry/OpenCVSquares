@@ -1,7 +1,7 @@
 __OpenCV computer vision with iOS__  
 
 24 Jan 2017  
-Updated for XCode 8.2.
+Updated for XCode 8.2.  
 This project includes a 2013-vintage OpenCV framework. For 64-bit compatibility see notes [here] (https://github.com/foundry/OpenCVSwiftStitch) on using recent openCV builds.
 
 16 Jan 2013   
